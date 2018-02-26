@@ -1,0 +1,82 @@
+<div id="engagement-complete-page" class="row">
+  <div class="header">
+    <div class="row">
+      <div class="col-xs-2 text-left">
+        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" ng-click="goPrevious()"></span>
+      </div>
+      <div class="col-xs-8 text-center title">
+        Engagement Pricing
+      </div>
+      <div class="col-xs-2 text-right">
+        <span class="glyphicon glyphicon-share" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+  <div class="content-body">
+    <div class="row text-center">
+      <p class="name">Symantec Blockchain Gap Analysis</p>
+      <p class="expense">$753K</p>
+      <p class="result">Fixed fee • Reimbursable expenses</p>
+    </div>
+    <div class="row text-center summarize">
+      <div class="col-xs-3">
+        <span class="detail-number">30.8%</span>
+        <span class="detail-text">Margin</span>
+      </div>
+      <div class="col-xs-6">
+        <span class="detail-number">66.2%</span>
+        <span class="detail-text">Eng. Realization</span>
+      </div>
+      <div class="col-xs-3">
+        <span class="detail-number">2,799</span>
+        <span class="detail-text">Hours</span>
+      </div>
+    </div>
+    <div class="row text-center weeks">
+      10 WEEKS
+    </div>
+    <div class="row text-center summarize">
+      <div class="col-xs-5">
+        <span class="detail-number">June 12</span>
+        <span class="detail-text">Start Date</span>
+      </div>
+      <div class="col-xs-2">
+        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </div>
+      <div class="col-xs-5">
+        <span class="detail-number">August 25</span>
+        <span class="detail-text">End Date</span>
+      </div>
+    </div>
+    <div class="row text-center table-title">
+      STAFFING PYRAMID
+    </div>
+    <div class="row">
+      <table class="table">
+      <thead>
+        <tr>
+          <th>ROLES</th>
+          <th>HOURS</th>
+          <th>MARGIN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="staffing in staffingPyramid">
+          <td>{{staffing.roles}}</td>
+          <td>{{staffing.hours}}</td>
+          <td>{{staffing.margin}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="row footer">
+    <button type="button" class="btn edit-btn" aria-label="Left Align">
+      <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+      Edit
+    </button>
+    <button type="button" class="btn next-btn" aria-label="Right Align" ng-click="goNext()">
+      Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>

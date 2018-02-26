@@ -1,0 +1,59 @@
+<div id="blockchain-step-three">
+    <div class="header">
+        <i class="fa fa-arrow-circle-o-left" aria-hidden="true" ng-click="backToDashboard()"></i>
+        <span>Cost Estimator</span>
+    </div>
+    <div class="content">
+        <div class="estimator-result">
+            <div class="amount">$755K</div>
+            <div class="type">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                Fixed fee
+            </div>
+            <div class="row cost">
+                <div class="col-xs-4 name">Cost</div>
+                <div class="col-xs-4 count">$680,000</div>
+                <div class="col-xs-4 edit"></div>
+            </div>
+            <div class="row margin">
+                <div class="col-xs-4 name">Margin</div>
+                <div class="col-xs-4 count">10.1%</div>
+                <div class="col-xs-4 edit">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    EDIT
+                </div>
+            </div>
+            <div class="row weeks">
+                <div class="col-xs-4 name">Weeks</div>
+                <div class="col-xs-4 count">12</div>
+                <div class="col-xs-4 edit">
+                    EDIT
+                </div>
+            </div>
+        </div>
+        <div class="role-list">
+            <div class="title">
+                <div class="pull-left">ROLE</div>
+                <div class="pull-right">HOURS</div>
+                <div class="clear-float"></div>
+            </div>
+            <div class="row role" ng-repeat="slider in sliderData">
+                <div class="col-xs-3 name">{{slider.name}}</div>
+                <div poc-slider class="col-xs-7 slider" value="slider.value" callback="slider.callback"></div>
+                <div class="col-xs-2 count">{{slider.value}}</div>
+            </div>
+            <div class="actions">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>Message</span>
+                <i class="fa fa-share" aria-hidden="true"></i>
+                <span>Assign</span>
+                <div class="help">HELP</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="back-btn" ng-click="back()"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</button>
+        <div class="division">|</div>
+        <button class="done-btn" ng-click="done()">Done</button>
+    </div>
+</div>

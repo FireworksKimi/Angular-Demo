@@ -1,0 +1,43 @@
+<script type="text/ng-template" id="quick-financials-modal.html">
+    <i class="fa fa-times close-btn" aria-hidden="true" ng-click="closeModal()"></i>
+    <div class="modal-header">
+        <span>QUICK FINANCIALS</span>
+    </div>
+    <div class="modal-body">
+        <div class="step-1" ng-show="showStep1">
+            <div class="question">
+                <span>What do you want to do?</span>
+            </div>
+            <div class="question-select-button button-type-1">
+                <p>OPEN FINANCIALS</p>
+            </div>
+            <div class="question-select-button create-new-financials button-type-2" ng-click="showStepTwo()">
+                <p>CREATE NEW FINANCIALS</p>
+            </div>
+            <div class="clear-float">
+            </div>
+        </div>
+        <div class="step-2" ng-show="showStep2">
+            <div class="question">
+                <span>Do you want to associate these financials to an opportunity?</span>
+            </div>
+            <div class="button-container">
+                <div class="button-type-2 decide-btn" ng-click="goStepThree()">YES</div>
+                <div class="button-type-1 decide-btn no-btn" ng-click="closeModal()">NO</div>
+                <div class="clear-float">
+                </div>
+            </div>                
+        </div>
+        <div class="step-3" ng-show="showStep3">
+            <div class="question">
+                <span>Choose an opportunity</span>
+            </div>
+            <ul class="opportunity-list">
+                <li class="opportunity-item" ng-repeat="opportunity in opportunityList track by $index" ng-click="chooseOpportunity(opportunity)">
+                    <h3>{{opportunity.company}}</h3>
+                    <h1>{{opportunity.opportunityName}}</h1>
+                </li>
+            </ul>
+        </div>
+    </div>
+</script>

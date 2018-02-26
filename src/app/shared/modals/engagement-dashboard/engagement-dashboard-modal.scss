@@ -1,0 +1,10 @@
+.engagement-dashboard-modal {
+    .button-containers {
+        .question-select-button {
+            margin-bottom: 20px;
+            &:nth-of-type(even) {
+                margin-left: 3%;
+            }
+        }
+    }
+}

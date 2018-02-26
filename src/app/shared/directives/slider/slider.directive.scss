@@ -1,0 +1,32 @@
+.noUi-horizontal {
+    height: 8pt;
+    border: 0;
+    border-radius: 0;
+    background-color: rgb(5, 139, 194);
+    .noUi-base {
+        border-radius: 0;
+        .noUi-origin {
+            border-radius: 0;
+            background-color: rgb(237, 233, 230);
+        }
+    }
+}
+
+.noUi-horizontal .noUi-handle {
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: -8px;
+    left: -12px;
+    border: none;
+    box-shadow: none;
+}
+
+.noUi-handle:after {
+    background: white;
+}
+
+.noUi-handle:before {
+    background: white;
+}

@@ -1,0 +1,31 @@
+<script type="text/ng-template" id="submit-salesforce-modal.html">
+    <i class="fa fa-times close-btn" aria-hidden="true" ng-click="closeModal()"></i>
+    <div class="modal-header">
+        <span>CREATE SOW</span>
+    </div>
+    <div class="modal-body">
+        <form class="create-sow">
+            <div class="form-group">
+                <div class="question">Name of SOW</div>
+                <input type="nameOfSow" class="form-control" id="nameOfSow">
+            </div>
+            <div class="form-group">
+                <div class="question">Invite to SOW</label>
+                <div class="invite-users-container">
+                    <ul class="resources-list">
+                        <li class="resource-item" ng-repeat="user in users track by $index">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            {{user.name}}
+                            <i class="fa fa-times delete-user"  ng-click="deleteUser($index)" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                    <input type="intiveUser" class="form-control" ng-model="username" ng-enter="addUser()" ng-blur="addUser()" id="intiveUser" placeholder="add resource">
+                </div>
+            </div>
+            <div class="question-select-button button-type-2" ng-click="generateSow()">
+                <p>GENERATE SOW</p>
+            </div>
+        </form>
+        <div class="clear-float"></div>
+    </div>
+</script>

@@ -1,0 +1,9 @@
+node_modules/
+bower_components/
+.sass-cache/
+.Angular-Demo/
+.tmp/
+Angular-Demo/
+Angular-Demo.zip
+Angular-Demo.war
+*.DS_Store

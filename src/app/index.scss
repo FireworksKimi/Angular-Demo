@@ -1,0 +1,132 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+$navbar-inverse-link-color: #5AADBB;
+$nav-local-height: 60px;
+$footer-local-height: 40px;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "../../bower_components/fontawesome/fonts";
+@import "../../bower_components/fontawesome/scss/font-awesome.scss";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+
+// bower:scss
+// endbower
+@import 'mixin.scss';
+@font-face {
+    font-family: 'helvetica-neue-regular-webfont';
+    src: url('../fonts/HelveticaNeue Regular.ttf');
+}
+
+@font-face {
+    font-family: 'helvetica-neue-thin-webfont';
+    src: url('../fonts/HelveticaNeue Thin.ttf');
+}
+
+@font-face {
+    font-family: 'helvetica-neue-medium-bold-webfont';
+    src: url('../fonts/HelveticaNeue-MediumBold.otf');
+}
+
+@font-face {
+    font-family: 'helvetica-neue-bold-webfont';
+    src: url('../fonts/HelveticaNeue Bold.ttf');
+}
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+
+// injector
+// endinjector
+
+/* Common Styles */
+
+body {
+    background-color: rgb(248,248,248);
+    width: 100%;
+    overflow: auto;
+    @extend %font-regular;
+    .row {
+        margin-left: 0px;
+        margin-right: 0px
+    }
+}
+
+.modal-dialog {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40%;
+    .close-btn {
+        color: white;
+        position: absolute;
+        right: -22px;
+        top: -32px;
+        font-size: 30px;
+    }
+    .modal-header {
+        border-bottom: 0px;
+        color: rgb(156,156,156);
+        font-size: 14px;
+    }
+    .modal-body {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        .question {
+            font-size: 15pt;
+            font-family: georgia;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            .span {
+                
+            }
+        }
+        .question-select-button {
+            height: 50px;
+            width: 48%;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            font-size: 11px;
+            border-radius: 4px;
+            p {
+                // line-height: 0px;
+            }
+        }
+        .button-type-1 {
+            border: 1px solid rgb(5,139,194);
+            color: rgb(5,139,194);
+        }
+        .button-type-2 {
+            background-color: rgb(5,139,194);
+            color: white;
+        }
+        .button-container {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        .decide-btn {
+            height: 44px;
+            line-height: 44px;
+            border-radius: 4px;
+            text-align: center;
+            float: left;
+            width: 40%;
+        }
+        .no-btn {
+            margin-left: 20%;
+        }
+    }
+}
+.clear-float{
+    clear: both;
+}
+
+

@@ -1,0 +1,19 @@
+<script type="text/ng-template" id="create-sow-modal.html">
+    <i class="fa fa-times close-btn" aria-hidden="true" ng-click="closeModal()"></i>
+    <div class="modal-header">
+        <span>CREATE SOW</span>
+    </div>
+    <div class="modal-body">
+        <div class="question">
+            <span>In order to start the SOW the financials will have to be submitted to Salesforce.</span>
+        </div>
+        <div class="button-containers row">
+            <div class="question-select-button button-type-1" ng-click="closeModal()">
+                <p>CANCEL</p>
+            </div>
+            <div class="question-select-button button-type-2" ng-click="submitToSalesforce()">
+                <p>SUBMIT TO SALESFORCE AND START NOW</p>
+            </div>
+        </div>
+    </div>
+</script>
