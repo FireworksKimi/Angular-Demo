@@ -1,6 +1,5 @@
 'use strict';
 
-angular.module('POC')
-    .controller('ApplicationController', () => {
-        'ngInject';
-    });
+angular.module('POC').controller('ApplicationController', () => {
+    'ngInject';
+});

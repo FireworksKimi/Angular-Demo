@@ -1,8 +1,7 @@
-'use strict'; // NOSONAR
-angular.module('POC')
-    .factory('DashboardService', (apiService) => {
-        'ngInject'; // NOSONAR
-        const dashboardService = {};
+'use strict';
+angular.module('POC').factory('DashboardService', () => {
+    'ngInject';
+    const dashboardService = {};
 
-        return dashboardService;
-    });
+    return dashboardService;
+});

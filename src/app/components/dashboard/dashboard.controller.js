@@ -1,4 +1,4 @@
-'use strict'; // NOSONAR
+'use strict';
 
 angular.module('POC').controller('DashboardController', DashboardController);
 
