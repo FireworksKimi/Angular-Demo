@@ -111,7 +111,7 @@ gulp.task('cleanwar', function() {
 gulp.task('war', function() {
     return gulp.src([path.join(conf.paths.dist, '**/**/*'), path.join(conf.paths.dist, '*')])
         //.pipe(war({welcome:'index.html'}))
-        .pipe(zip('poc.war'))
+        .pipe(zip('Angular-Demo.war'))
         .pipe(gulp.dest("."));
 });
 
